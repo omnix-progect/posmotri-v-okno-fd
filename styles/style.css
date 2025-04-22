@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -49,5 +52,149 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+.content{
+  padding: 133px 30px;
+  width: 100%;
+  gap: 30px;
+  display: grid;
+  align-items: end;
+  grid-template-areas:
+  "result content__details"
+}
+
+.search-form{
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+fieldset{
+  border: none;
+}
+
+.search-form__fieldset-title{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.search-form__label{
+  display: flex;
+  width: fit-content;
+}
+
+.result{
+  display: flex;
+  height: 100%;
+  width: 711px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.result__video-container{
+  width: 100%;
+  height: 386px;
+  padding-bottom: 16px;
+}
+
+.result__video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content__details{
+  max-height: 534px;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  grid-area:  content__details;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.title{
+  font-size: 75px;
+  font-weight: bold;
+  font-family: 'Oswald';
+  line-height: 0.94em;
+  text-transform: uppercase;
+}
+
+.content__accent{
+  color: #545050;
+}
+
+.content__list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+.content__list-item{
+  width: 399px;
+}
+
+.content__card-link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content__video-card-description-container{
+  flex-grow: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content__video-card-title{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.content__video-card-description{
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.content__video-card-thumbnail{
+  height: 103px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+
 
 
