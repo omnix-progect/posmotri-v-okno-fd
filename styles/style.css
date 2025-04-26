@@ -13,12 +13,12 @@ button:focus {
 }
 
 .page {
-  font-family: "Fira Sans Condensed",sans-serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin: auto;
   color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -198,12 +198,12 @@ fieldset {
 }
 
 .title {
+  margin-top: 3px;
   font-family: "Oswald";
   font-weight: bold;
   font-size: 75px;
   line-height: 0.94em;
   text-transform: uppercase;
-  margin-top: 3px;
 }
 
 .content__accent {
@@ -222,9 +222,9 @@ fieldset {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 298px;
   gap: 30px;
   width: 399px;
+  height: 298px;
   padding-left: 3px;
   overflow: auto;
 }
@@ -239,7 +239,7 @@ fieldset {
   text-decoration: none;
 }
 
-.content__card-link:active{
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -311,13 +311,13 @@ fieldset {
   align-items: center;
   border: 1px solid currentColor;
   color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
   line-height: normal;
   background-color: transparent;
   cursor: pointer;
-  font-family: "Fira Sans Condensed",sans-serif;
 }
 
 .search-form__submit-button {
@@ -327,9 +327,9 @@ fieldset {
 }
 
 .more-button {
-  margin-right: 3px;
   flex-shrink: 0;
   height: 34px;
+  margin-right: 3px;
   margin-bottom: 3px;
 }
 
